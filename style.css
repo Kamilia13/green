@@ -1,0 +1,198 @@
+
+main{
+    height: 250vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+nav{
+    background: url(https://www.romantik-hotel.at/andsrv/content/files/resized/shutterstock-293870645.738x738m1.479.jpg);
+    background-size:100%;
+    background-position-y:center ;
+    
+    color: white;
+    height: 160px;
+    margin-bottom: 50px;
+    position: relative;
+       
+}
+
+nav div {
+    font-size:1.3em;
+    text-align: center;
+    margin-top: 110px;
+   font-weight: lighter;
+    
+}
+
+
+
+
+section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+section:hover{
+    transform: translateX(30px);
+    cursor: pointer;
+}
+
+section:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+
+section:nth-of-type(1) .avatar{
+    background: url(data:image/png;base64,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);
+    background-size: 100%;
+    width: fit;
+    margin: 0;
+    margin-left: 20px;
+}
+section:nth-of-type(2) .avatar{
+    background: url(https://cdn.iconscout.com/icon/premium/png-256-thumb/direct-flight-1409942-1193871.png);
+    background-size: cover;
+    margin: 0;
+    margin-left: 20px;
+}
+section:nth-of-type(3) .avatar{
+    background: url(https://cdn3.vectorstock.com/i/1000x1000/50/52/round-icon-airplane-ticket-cartoon-vector-15215052.jpg);
+    background-size: cover;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+section:nth-of-type(4) .avatar{
+    background: url(https://cdn5.vectorstock.com/i/1000x1000/51/54/luggage-icon-on-round-background-vector-17685154.jpg);
+    background-size: cover;
+    margin: 0;
+    margin-left: 20px;
+}
+section:nth-of-type(5) .avatar{
+    background: url(https://thumbs.dreamstime.com/b/meeting-room-icon-premium-white-round-button-isolated-abstract-illustration-105930172.jpg);
+    background-size: contain;
+    background-position: center ;
+    margin: 0;
+    margin-left: 20px;
+}
+section:nth-of-type(6) .avatar{
+    background: url(https://icon-library.com/images/public-transport-icon/public-transport-icon-14.jpg);
+    background-size: cover;
+    margin: 0;
+    margin-left: 20px;
+}
+section:nth-of-type(7) .avatar{
+    background: url(https://cdn1.vectorstock.com/i/1000x1000/40/10/electric-car-icon-on-round-background-vector-17684010.jpg);
+    background-size: cover;
+    margin: 0;
+    margin-left: 20px;
+}
+
+section:nth-of-type(even) .text{
+    background: rgb(135, 179, 95);
+    border-radius: 15px 15px 0 15px;
+    color: white;
+}
+section:nth-of-type(even) .text:before{
+    position: absolute;
+    content: "";
+    top: 42%;
+    left: 99%;
+    border: 15px solid transparent;
+    border-left-color:rgb(135, 179, 95) ;
+}
+
+section .avatar{
+    width: 100px;
+    height: 100px;
+    background: url();
+    background-size: cover;
+    border-radius: 100%;
+    margin-right: 20px;
+    position: relative;
+}
+
+section .avatar i {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: white;
+    font-size: 3em;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+section .avatar:hover i {
+    opacity: 1;
+
+}
+
+
+
+section .text{
+    max-width: 200px;
+    background: lightgrey;
+    padding: 20px;
+    border-radius: 15px 15px 15px 0;
+    position: relative;
+    min-width: 65%;
+}
+
+section .text:before{
+    position: absolute;
+    content: "";
+    top:40%;
+    left:-25px;
+    border: 15px solid transparent;
+    border-right-color: lightgrey;
+}
+
+.topic {
+    background: rgb(91, 181, 223);
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+footer{
+    border: 3px solid rgb(135, 179, 95);
+    border-radius: 15px;
+    position: relative;
+    
+}
+
+footer h3 {
+color:rgb(135, 179, 95) ;
+font-weight: bold;
+font-size: 1.5em;
+padding-left: 20px;
+}
+
+footer a{
+  padding-left: 20px;  
+  padding-bottom: 40px;
+
+}
+.text{
+    font-size: 1.3em;
+}
+
+@media (max-width: 476px){
+    section .text {
+        width: 100px;
+    }
+}
